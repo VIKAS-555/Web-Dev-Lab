@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program 8 - Sticky Navbar & Card Overlay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <header class="sticky-nav">
+    <div class="nav-brand">VikasPortfolio</div>
+    <nav class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+ 
+  <section id="home" class="hero">
+    <h1>Sticky Navigation & Interactive Card Overlays</h1>
+    <p>Scroll down to see the navbar stick to the top and hover over the cards below.</p>
+  </section>
+
+  
+  <main id="projects" class="cards-section">
+    <h2>Featured Projects</h2>
+
+    <div class="cards-grid">
+
+      
+      <article class="project-card">
+        <div class="card-content">
+          <h3>ZipMini Platform</h3>
+          <p>Geo-fenced micro-mobility electric vehicle platform.</p>
+          <span class="badge">TypeScript</span>
+        </div>
+       
+        <div class="card-overlay">
+          <h4>ZipMini Live Demo</h4>
+          <p>Explore the interactive map and booking system.</p>
+          <a href="#" class="overlay-btn">View Demo</a>
+        </div>
+      </article>
+
+     
+      <article class="project-card">
+        <div class="card-content">
+          <h3>LogPulse AI</h3>
+          <p>Automated telemetry and log triage root-cause analyzer.</p>
+          <span class="badge">Python</span>
+        </div>
+       
+        <div class="card-overlay">
+          <h4>LogPulse AI Source</h4>
+          <p>Check the multi-agent triage architecture on GitHub.</p>
+          <a href="#" class="overlay-btn">View Code</a>
+        </div>
+      </article>
+
+     
+      <article class="project-card">
+        <div class="card-content">
+          <h3>HealthCoder App</h3>
+          <p>Calorie tracking and food classification dashboard.</p>
+          <span class="badge">React</span>
+        </div>
+       
+        <div class="card-overlay">
+          <h4>HealthCoder Preview</h4>
+          <p>View nutritional breakdown and daily tracking logs.</p>
+          <a href="#" class="overlay-btn">Explore App</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer id="contact" class="footer">
+    <p>&copy; 2026 Web Development Lab | P8: CSS Positioning</p>
+  </footer>
+
+</body>
+</html>
