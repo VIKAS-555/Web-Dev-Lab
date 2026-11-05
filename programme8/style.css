@@ -1,0 +1,146 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    
+}
+nav{
+    display:flex;
+    gap: 5rem;
+}
+a{
+    text-decoration: none;
+    color: #3c67e9;
+    font-weight: bold;
+}
+.nav-brand{
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+a:hover{
+    color: #ca2435;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   background-color: #8db7ed;
+   border-radius:10px;
+}
+#home{
+   padding-top: 50px;
+   background-color: #e0f7fa; 
+}
+#projects{
+    padding: 2rem;
+    background-color: #f4f4f4;
+   
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+.hero {
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.cards-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+
+.project-card {
+  position: relative;
+  overflow: hidden; 
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  min-height: 200px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card-content {
+  padding: 1.75rem;
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background-color: #dbeafe;
+  color: #2563eb;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.92);
+  color: #ffffff;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+
+  
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+.project-card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.footer {
+  text-align: center;
+  padding: 6rem 1rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
