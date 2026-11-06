@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f7f9fa;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.project-card span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* Advanced Grid Spanning */
+.featured {
+  grid-column: span 2;
+  background-color: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 13px;
+  color: #777;
+}
+
+
+@media (max-width: 650px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured,
+  .wide {
+    grid-column: span 1;
+  }
+}
